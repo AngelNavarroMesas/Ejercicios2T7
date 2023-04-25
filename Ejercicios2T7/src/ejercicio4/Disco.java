@@ -6,7 +6,8 @@ public class Disco {
 	public String toString() {
 		return "Disco [codigo=" + codigo + ", autor=" + autor + ", titulo=" + titulo + ", genero=" + genero + "]";
 	}
-
+	
+	String[] discos= new String[10];
 	String codigo="LIBRE";
 	String autor;
 	String titulo;
@@ -22,7 +23,8 @@ public class Disco {
 		this.titulo = titulo;
 		this.genero = genero;
 	}
-
+	
+	
 	public String getCodigo() {
 		return codigo;
 	}
