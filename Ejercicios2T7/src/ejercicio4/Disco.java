@@ -12,19 +12,28 @@ public class Disco {
 	String autor;
 	String titulo;
 	String genero;
-	
+	int duracion;
 	
 	public Disco() {
+		this.codigo = "LIBRE";
 	}
 	
-	public Disco(String codigo, String autor, String titulo, String genero) {
+	public Disco(String codigo, String autor, String titulo, String genero, int duracion) {
 		this.codigo = codigo;
 		this.autor = autor;
 		this.titulo = titulo;
 		this.genero = genero;
+		this.duracion = duracion;
 	}
 	
-	
+	public int getDuracion() {
+		return duracion;
+	}
+
+	public void setDuracion(int duracion) {
+		this.duracion = duracion;
+	}
+
 	public String getCodigo() {
 		return codigo;
 	}
